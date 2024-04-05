@@ -1,13 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import Card from "./Card";
+import "tachyons";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <div>
+      <Card fullName={"Robot 1"} email={"adfad@adfgad.com"}></Card>
+
+      <Card fullName={"Robot 2"} email={"adfad@adfgad.com"}></Card>
+
+      <Card fullName={"Robot 3"} email={"adfad@adfgad.com"}></Card>
+    </div>
   </React.StrictMode>
 );
 
